@@ -1,22 +1,17 @@
 <article
-  class="flex justify-center lg:justify-between items-center lg:items-start gap-5"
+  
+  class="flex justify-center lg:justify-between items-center lg:items-start gap-5 w-full"
 >
-  <div class="w-full">
-    <img
-      src="https://www.dwinawan.com/blog/thumb_article20.jpg"
-      alt=""
-      class="md:w-full"
-    />
+  <div class="w-2/4">
+    <img [src]="src" alt="" class="md:w-full" />
   </div>
 
-  <div class="flex flex-col">
-    <span class="text-sm md:text-base text-weak-text-color opacity-60 block"
-      >Desember 21, 2021</span
-    >
-    <h3
-      class="font-bold text-strong-text-color lg:text-3xl md:text-2xl text-xl"
-    >
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+  <div class="flex flex-col w-2/4">
+    <span class="text-sm md:text-base text-weak-text-color opacity-60 block">{{
+      date
+    }}</span>
+    <h3 class="font-bold text-strong-text-color md:text-2xl text-xl">
+      {{ title }}
     </h3>
   </div>
 </article>
