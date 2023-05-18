@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { TitleComponent } from './title/title.component';
-import { HighlightCardComponent } from './highlight-card/highlight-card.component';
-import { RegularCardComponent } from './regular-card/regular-card.component';
-import { CardContainerComponent } from './card-container/card-container.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { TitleComponent } from './pages/home/title/title.component';
+import { HighlightCardComponent } from './pages/home/highlight-card/highlight-card.component';
+import { RegularCardComponent } from './components/regular-card/regular-card.component';
+import { CardContainerComponent } from './pages/home/card-container/card-container.component';
+import { HomeComponent } from './pages/home/home.component';
+import { DynamicBlogPageComponent } from './pages/dynamic-blog-page/dynamic-blog-page.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { CardContainerComponent } from './card-container/card-container.componen
     HighlightCardComponent,
     RegularCardComponent,
     CardContainerComponent,
+    HomeComponent,
+    DynamicBlogPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
