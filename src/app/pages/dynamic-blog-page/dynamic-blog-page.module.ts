@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RegularCardComponent } from 'src/app/components/regular-card/regular-card.component';
+import { RegularCardComponent } from 'src/app/shared/regular-card/regular-card.component';
 import { DynamicBlogPageComponent } from './dynamic-blog-page.component';
 import { HomeModule } from '../home/home.module';
 

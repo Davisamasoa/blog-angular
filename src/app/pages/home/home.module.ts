@@ -5,10 +5,11 @@ import { CardContainerComponent } from './card-container/card-container.componen
 import { TitleComponent } from './title/title.component';
 import { HomeComponent } from './home.component';
 import { HighlightCardComponent } from './highlight-card/highlight-card.component';
-import { RegularCardComponent } from 'src/app/components/regular-card/regular-card.component';
+import { RegularCardComponent } from 'src/app/shared/regular-card/regular-card.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   declarations: [
     HomeComponent,
     CardContainerComponent,
