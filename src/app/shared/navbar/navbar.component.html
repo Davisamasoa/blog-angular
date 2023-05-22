@@ -10,7 +10,29 @@
   </picture>
   <ul
     class="flex lg:w-[70%] flex-wrap justify-center lg:justify-start items-center lg:gap-5 gap-5 uppercase text-sm text-weak-text-color"
-  ></ul>
+  >
+    <li>
+      <a
+        routerLink="/"
+        routerLinkActive="activated"
+        [routerLinkActiveOptions]="{ exact: true }"
+        href="https://github.com/Davisamasoa"
+      >
+        HOME
+      </a>
+    </li>
+    <li>
+      <a
+        routerLink="/0"
+        routerLinkActive="activated"
+        target="_blank"
+        href="https://github.com/Davisamasoa"
+      >
+        HiGHLIGHT
+      </a>
+    </li>
+  </ul>
+
   <div class="lg:w-[30%]">
     <ul
       class="flex justify-center lg:justify-end items-end gap-5 h-full text-weak-text-color"
