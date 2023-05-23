@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewChecked, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements AfterViewChecked {
   title = 'blog-angular';
   public showAppComponent: boolean = false;
 
-  ngOnInit(): void {
+  ngAfterViewChecked(): void {
     this.showAppComponent = true;
   }
 }
